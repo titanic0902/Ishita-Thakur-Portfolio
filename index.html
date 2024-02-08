@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height:70px;
+            background-color: rgb(8, 8, 67);
+
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+            
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;;
+        }
+        nav ul li a{
+            color:aliceblue;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            color:rgb(29, 29, 224);
+            font-size: 1.2rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display:flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            
+            
+        }
+        .leftsection{
+        
+            font-size: 3rem;
+           margin: 30px 0;
+        }
+        .firstsection > div{
+            width:30%;
+            
+        }
+        
+           /* width: 90%;
+            margin:50px 0;*/
+            .rightsection img {
+             border-radius: 50%;
+             width: 300px; /* Adjust the width as needed */
+             height: 300px; /* Adjust the height as needed */
+             object-fit: cover; /* Maintain aspect ratio */
+             border: 2px solid blueviolet;
+            }
+
+            
+            
+        
+        .purple{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;  
+        }
+        .secondsection{
+            width:80vw;
+           margin:auto;
+           height:80vh;
+
+        }
+        main hr{
+            border: 0;
+            background: rgb(59, 6, 205);
+            height:1.5px;
+            margin:40px 84px;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .text-gray{
+            color: gray;
+        }
+        .secondsection .box{
+            background: white;
+            width:80vw;
+            height:2px;
+            margin:56px 0px;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height:93px;
+            width:1px;
+            background-color: white;
+            margin:0 120px;
+        }
+        .vertical-title{
+            position: relative;
+            top:75px;
+            font-size:20px;
+            
+            width:150px;
+           
+
+        }
+        .vertical-desc{
+
+            position:relative;
+            top:86px;
+            color:gray;
+            width:150px;
+            font-size:15px;
+            
+        }
+        .image-top{
+            width:23px;
+            position:relative;
+            top:-32px;
+            left: -9px;
+        }
+      
+        .leftsection .btn{
+            padding:12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size:20px;
+            cursor:pointer;
+        }
+        
+    
+
+.project {
+   /* margin-bottom: 40px 0px;*/
+    display: flex;
+    align-items: center;
+    
+    margin: 80px ;
+    
+           
+    
+}
+
+
+
+.project-details {
+    flex: 1;
+    
+}
+
+.project h3 {
+    color: rgb(132, 9, 255);
+    
+}
+
+.project p {
+    color: hwb(240 98% 2%);
+    font-size:1.1rem
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #555;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered-heading {
+    text-align: center; /* Center text within the container */
+    color: white;
+    font-size: 1.9rem;
+}
+/* FOOTER PART*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust the padding as needed */
+}
+.contact p {
+    /*margin:30px 0px;*/
+    margin-bottom: 10px;
+    /*padding: 40px 0;*/
+}
+
+
+
+   
+    @media only screen and (max-width: 480px) {
+    /* Styles for Samsung phones or devices with screen width up to 480 pixels */
+
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    nav {
+        height: 50px; /* Adjust navigation bar height for smaller screens */
+    }
+
+    .left {
+        font-size: 1.2rem; /* Adjust left section font size for smaller screens */
+    }
+
+    .firstsection {
+        margin: 40px 0; /* Adjust margin for smaller screens */
+    }
+
+    .rightsection img {
+        width: 100%; /* Make the image responsive by setting its width to 100% */
+        height: auto;
+        border-radius: 0;
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .leftsection {
+        font-size: 1.2rem; /* Adjust left section font size for smaller screens */
+    }
+
+    .box {
+        flex-direction: column; /* Adjust flex direction for smaller screens */
+    }
+
+    .vertical {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        width: auto;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .centered-heading {
+        font-size: 1.5rem; /* Adjust heading font size for smaller screens */
+    }
+
+    .project {
+        margin: 40px 0; /* Adjust margin for smaller screens */
+    }
+
+    .project-details {
+        text-align: center;
+    }
+
+    .contact p {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+}
+
+
+
+        
+
+
+        
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ishita Portfolios</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                   
+                    
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="firstsection">
+            <div class="leftsection">
+                Hi, I'm Ishita Thakur, a versatile learner proficient in<span class="purple"></span> 
+            
+            
+            <span id="element"></span>
+            <div class="button">
+               
+                <a href="https://github.com/titanic0902" target="_blank">
+                    <button class="btn">Visit Github</button>
+                  </a>
+                <a href="https://drive.google.com/file/d/15IPZ0CUqhbo08dK58vvvv0P5W3DEgvPe/view?usp=drivesdk" download>
+                    <button class="btn">Download Resume</button>
+                  </a>
+
+            </div>
+            
+             
+            
+        </div>
+            <div class="rightsection">
+                <img src="ishita beau.jpg" alt="hello">
+            </div>
+        </section>
+        <hr>
+        <section id="Skills" class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+        <h1>SKILLS</h1>
+        <div class="box">
+            <div class="vertical">
+                <img src="kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png" class="image-top">
+                <div class="vertical-title">
+                    Frontend Developer
+                </div>
+                <div class="vertical-desc">
+                    HTML,CSS,JS,REACT.JS
+                   
+                  </div>
+            </div>
+            <div class="vertical">
+                <img src="bg.png" alt="" class="image-top">
+               
+                <div class="vertical-title">
+                    Machine Learning
+                </div>
+                <div class="vertical-desc">
+            Tensorflow,keras,CNN, Neural Networks
+                    RNN,Desicion Tree Implementation,Random Forest
+                   
+                  </div>
+            </div>
+            <div class="vertical">
+                <img src="c-logo-png-transparent.png" alt="" class="image-top">
+                <div class="vertical-title">
+                    Languages
+                </div>
+                <div class="vertical-desc">
+                    C , C++, PYTHON , Javascript
+                   
+                  </div>
+            </div>
+            <div class="vertical">
+                <img src="kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png" alt="" class="image-top">
+                <div class="vertical-title">
+                   Data Science
+                </div>
+                <div class="vertical-desc">
+                   API,Data Visulaisation (Tableau),
+                    Web Scrapping-Beautiful Soup,
+                    SQL,SQLite
+                  
+                   
+                  </div>
+            </div>
+            <div class="vertical">
+                <img src="github-icon-logo-black-and-white.png" alt="" class="image-top">
+                <div class="vertical-title">
+                    FrameWorks
+                </div>
+                <div class="vertical-desc">
+                    Github,Tensorflow,Numpy,pandas
+                    Matplotlibt
+                   
+                  </div>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+
+    </section>
+   <!-- </main> -->
+   
+    <hr>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h1 class="centered-heading">PROJECTS</h1>
+            <div class="project">
+               
+                <div class="project-details">
+                    <h3>Facial_emotional_Recogination </h3>
+                    
+                    <p>  This project involves cloning a facial expressions dataset from GitHub, organizing the data into training and testing sets, and building a Convolutional Neural Network (CNN) using TensorFlow and Keras to classify facial expressions into eight categories. The CNN model consists of three convolutional layers followed by max-pooling, flattening, and dense layers. Training and testing data are generated using ImageDataGenerator, and the model is trained for 10 epochs, achieving validation accuracy around 65-70%. Early stopping is implemented to prevent overfitting during training.</p>
+                    <a href="https://github.com/titanic0902/Facial_emotion_recogination" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                
+                <div class="project-details">
+                    <h3>Ecommerce Website</h3>
+                    <p>In this e-commerce website, we created the frontend using React, where we designed the shopping cart and product sections. For the backend, we utilized Node.js and MongoDB to store user login information in the database.</p>
+                    <a href="https://matrixshoes.netlify.app/" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+               
+                <div class="project-details">
+                    <h3>Twitter Sentiment Analaysis</h3>
+                    <p>In this Twitter analysis project using machine learning, we employed natural language processing techniques to analyze sentiments in tweets. Our model, trained on a labeled dataset, accurately classified tweets into positive, negative, or neutral sentiments, providing valuable insights into public opinions and trends on the platform.</p>
+                    <a href="https://github.com/titanic0902/Twitter-sentiment-Analysis" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+               
+                <div class="project-details">
+                    <h3>Titanic_survival_Analyasis </h3>
+                    
+                    <p>In the Titanic Survival Analysis project with Seaborn, we leveraged this powerful data visualization library to explore and visualize survival patterns. Using Seaborn's statistical plots, we uncovered insights into passenger survival based on factors such as class, gender, and age, enhancing our understanding of the Titanic dataset through informative visualizations.</p>
+                    <a href="https://github.com/titanic0902/Titanic_survival_Analyasis/blob/main/Untitled4.ipynb" target="_blank">View Project</a>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+    <hr>
+    </main>
+
+   
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>CONTACTS</h2>
+            <p>Email: <a href=" mailto:ishita0902thakur@gmail.com">ishita0902thakur@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ishita-thakur-289b04291/" target="_blank">linkedin.com/in/yourprofile</a></p>
+            <p>GitHub: <a href="https://github.com/titanic0902" target="_blank">github.com/yourusername</a></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ishita Thakur Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Data Science','Machine Learning'],
+          typeSpeed: 50,
+        });
+      </script>
+    
+</body>
+</html>
